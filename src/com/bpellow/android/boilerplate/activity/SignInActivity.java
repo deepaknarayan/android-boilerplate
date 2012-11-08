@@ -6,13 +6,15 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.text.TextWatcher;
+
 
 import com.bpellow.android.boilerplate.R;
 import com.bpellow.android.boilerplate.activity.model.Token;
 import com.bpellow.android.boilerplate.net.ApiProxyStub;
 import com.bpellow.android.boilerplate.util.Preferences;
 
-public class SignInActivity extends BaseActivity {
+public class SignInActivity extends BaseActivity implements TextWatcher {
 	private EditText inputUsername;
 	private EditText inputPassword;
 	private Button signinBtn;
